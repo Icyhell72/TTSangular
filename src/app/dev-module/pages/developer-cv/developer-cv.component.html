@@ -1,0 +1,29 @@
+<div class="acceuil">
+  <app-header></app-header>
+  <div class="content">
+    <app-sidebar></app-sidebar>
+    <div class="body">
+      <div class="search-bar">
+        <div data-aos="fade-down" class="mb-5">
+          <h2 class="text-center mb-4 orange-text">
+            Chargez votre CV et améliorez votre carrière avec des recommandations personnalisées</h2>
+          <br>
+        </div>
+        <div class="text-center mb-4">
+          <label for="cvFileInput" class="form-label">
+            Téléchargez votre CV ici :</label>
+          <br><br><br><br><br>
+          <div class="input-group">
+            <input type="file" id="cvFileInput" class="form-control" (change)="onFileChange($event)">
+            <button class="btn btn-orange" (click)="uploadCV()" [disabled]="!selectedFile">Télécharger</button>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="formations">
+          <div class="recommender">
+            <app-croussel></app-croussel>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

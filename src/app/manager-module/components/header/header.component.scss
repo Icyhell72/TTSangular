@@ -1,0 +1,43 @@
+.nav {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%; /* Adjust padding on left and right */
+  }
+  
+  .material-symbols-outlined {
+    font-size: 1.5em;
+    color: black; /* White color for icons */
+  
+    justify-content: space-between;
+  }
+  
+  .navbar {
+    z-index: 1000;
+    width: 100vw;
+    background-color:black /* Sky Blue */
+  
+  }
+  
+  .line {
+    display: flex;
+    margin: auto 0.5em;
+  }
+  
+  .menu-icon {
+    margin-right: 0.5em;
+  }
+  
+  .sofrecomimg {
+  
+    filter: brightness(1.5) sepia(1) hue-rotate(160deg);
+  
+  }
+  
+  .navbar{
+    z-index: 1000;
+    width: 100vw;
+}
+.navbar-nav{
+    width: 15vw;
+    justify-content: space-around;
+}

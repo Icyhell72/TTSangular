@@ -1,0 +1,85 @@
+<div class="acceuil">
+  <app-header></app-header>
+  <div class="content">
+    <app-sidebar></app-sidebar>
+    <div class="body">
+      <div class="recommendation-container">
+        <h2 class="orange-text">
+          Recommandations des formations basées sur votre CV :</h2>
+          <div class="chip-container">
+            <button
+              class="chip"
+              *ngFor="let category of technologyCategories"
+              (click)="filterBy(category)"
+            >
+             
+            </button>
+          </div>
+        <br><br>
+        <div *ngIf="recommendations && recommendations.best_language">
+          <div class="rec">
+            <p>
+              Si vous souhaitez vous concentrer sur l'un des fortes langages,
+              votre force réside dans {{ recommendations.best_language }}. Continuez votre bon travail !</p>
+            <div class="bestlang">
+              <app-card
+                (favoriteEvent)="reloadContent($event)"
+                *ngFor="let elt of bestLanguageRecommendations"
+                [dataFormation]="elt"
+              ></app-card>
+            </div>
+          </div>
+          <br><br><br>
+          <div>
+            <p>Vos connaissances en {{ recommendations.best_framework }} sont louables.
+              Améliorez votre expertise pour encore plus de succès.</p>
+            <div class="bestframe">
+              <app-card
+                (favoriteEvent)="reloadContent($event)"
+                *ngFor="let elt of bestFrameworkRecommendations"
+                [dataFormation]="elt"
+              ></app-card>
+            </div>
+          </div>
+          <br><br><br>
+          <div>
+            <p>
+              Il semble que vous soyez moins expérimenté avec {{ recommendations.worst_language }}. 
+              Envisagez de suivre une formation pour améliorer vos compétences.</p>
+            <div class="worstlang">
+              <app-card
+                (favoriteEvent)="reloadContent($event)"
+                *ngFor="let elt of worstLanguageRecommendations"
+                [dataFormation]="elt"
+              ></app-card>
+            </div>
+          </div>
+          <br><br><br>
+          <div>
+            <p>L'exploration de {{ recommendations.worst_framework }} pourrait conduire à de nouvelles opportunités passionnantes.
+              Investissez pour en savoir plus</p>
+            <div class="worstframe">
+              <app-card
+                (favoriteEvent)="reloadContent($event)"
+                *ngFor="let elt of worstFrameworkRecommendations"
+                [dataFormation]="elt"
+              ></app-card>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!recommendations || !recommendations.best_language">
+          <p>No recommendations available.</p>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="formations">
+        <div class="recommender">
+          <app-croussel></app-croussel>
+        </div>
+        <app-spinner *ngIf="spinner"></app-spinner>
+        <div *ngIf="!spinner" class="formation-grid">
+          <!-- Display your formations here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

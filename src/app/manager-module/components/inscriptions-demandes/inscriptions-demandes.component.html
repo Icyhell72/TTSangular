@@ -1,0 +1,9 @@
+<div data-aos="fade-up" class="all-demandes">
+    <app-card-inscription
+    [nom]="demande.nom"
+    [prenom]="demande.prenom"
+    [email]="demande.email"
+    [numero]="demande.numero"
+    (reload)="ngOnInit()"
+    *ngFor="let demande of allDemande"  ></app-card-inscription>
+</div>

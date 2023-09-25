@@ -1,0 +1,330 @@
+
+.registre{
+  background-color:#ff7900 ;
+  color: white;
+  border: none;
+}
+.form-select{
+  
+  height: 3em;
+}
+.erreur{
+  display: grid;
+  color: rgb(254, 42, 42);
+  font-size: 14px;
+  margin: 0.1em auto;
+  text-align: center;
+
+}
+
+
+.success{
+  background-color: #329b37;
+  color: white;
+  font-size: 16px;
+  
+  padding: 1em;
+  margin: 1em auto;
+  width: 20vw;
+  text-align: center;
+}
+.warn{
+  background-color: rgb(212, 0, 0);
+  color: white;
+  font-size: 16px;
+
+  
+  padding: 1em;
+  margin: 1em auto;
+  width: 20vw;
+  text-align: center;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  width: 100vw;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width:1400px; /* Adjust as needed */
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-link {
+  font-size: 1.5em;
+  color: #ff7900; /* Orange color */
+  margin: 0 0.5em;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #ff9f40; /* Lighter orange color on hover */
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact-link {
+  color: #ff9f40;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.contact-link i {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+
+.contact-link:hover {
+  color: #ff7900;
+}
+
+
+h3 {
+  margin: auto;
+  color: #f7ab5e;
+  padding: 1em;
+  text-align: center;
+  font-size: 18px;
+}
+.body{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+ background-image:url('../../../../assets/images/formation9.jpg');
+ background-position: center;
+ background-size: cover;
+}
+.nav {
+  
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%; /* Adjust padding on left and right */
+  height: 4vw;
+}
+
+.material-symbols-outlined {
+  font-size: 1.5em;
+  color: black; /* White color for icons */
+
+  justify-content: space-between;
+}
+
+.navbar {
+  z-index: 1000;
+  width: 100vw;
+  background-color:black ;
+
+  
+
+}
+
+.line {
+  display: flex;
+  margin: auto 0.5em;
+}
+
+.menu-icon {
+  margin-right: 0.5em;
+}
+
+.sofrecomimg {
+  
+
+  filter: brightness(1.5) sepia(1) hue-rotate(160deg);
+
+}
+
+.stretched-link:hover{
+  cursor: pointer;
+}
+
+
+
+.form-label{
+  color: #f7ab5e;
+}
+
+$orange: #ff7900;
+
+
+
+.content {
+display: flex;
+justify-content: space-around;
+align-items: center;
+vertical-align: middle;
+margin: 2em auto 1em;
+}
+
+.right {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 25vw;
+}
+
+.form-control {
+border: 1px solid #000;
+padding: 1em 0.5em;
+border-radius: 4px; /* Added border radius */
+}
+
+span {
+color: gray;
+}
+
+.connecter,
+.registre {
+background-color: #ff7900;
+color: white;
+border: none;
+border-radius: 4px; /* Added border radius */
+padding: 0.5em 1em;
+cursor: pointer;
+}
+
+.form-select {
+height: 3em;
+}
+
+.erreur {
+  display: grid;
+  color: rgb(255, 0, 0);
+  font-size: 16px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0.5em auto;
+  text-align: center;
+  text-shadow: 1px 1px 1px  white; /* Add white text shadow here */
+}
+
+
+.toast {
+position: absolute;
+bottom: 0;
+border: none;
+box-shadow: 2px 2px 5px rgb(170, 170, 170);
+}
+
+.success {
+background-color: #329b37;
+color: white;
+font-size: 16px;
+padding: 1em;
+margin: 1em auto;
+width: 20vw;
+text-align: center;
+
+}
+
+.warn {
+background-color: rgb(212, 0, 0);
+color: white;
+font-size: 16px;
+padding: 1em;
+margin: 1em auto;
+width: 20vw;
+text-align: center;
+}
+
+button:disabled,
+button[disabled] {
+background-color: #ed994f;
+border-color: #ed994f;
+color: white;
+cursor:wait;
+}
+
+
+
+.footer {
+background-color: black;
+color: white;
+text-align: center;
+padding: 1em 0;
+width: 100vw;
+}
+
+
+.form-control{
+border-color: #ff9f40;
+}
+
+.signup {
+  margin: 1em auto;
+  display: flex; /* Use flexbox to center text vertically */
+  justify-content: center; /* Center text horizontally */
+  border: 2px solid #db5f20;
+  background-color: #db5f20;
+  border-radius: 4px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  height: 3.2em;
+  width: 7em;
+  line-height: 2.8em; /* Center text vertically */
+}
+
+button:disabled,
+button[disabled] {
+  margin: 1em auto;
+  display: flex; /* Use flexbox to center text vertically */
+  justify-content: center; /* Center text horizontally */
+  border: 2px solid #db8120;
+  background-color: #db8120;
+  border-radius: 4px;
+  color: white;
+  font-size: 15px;
+  cursor: wait;
+  width: 7em;
+  height: 3.2em;
+  line-height: 2.8em; /* Center text vertically */
+}
+
+.signup:after {
+  margin: 1em auto;
+  display: flex; /* Use flexbox to center text vertically */
+  justify-content: center; /* Center text horizontally */
+  border: 2px solid #db5f20;
+  background-color: #db5f20;
+  border-radius: 4px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  width: 7em;
+  height: 3.2em;
+  line-height: 2.8em; /* Center text vertically */
+}
+
+.signup:hover {
+  margin: 1em auto;
+  display: flex; /* Use flexbox to center text vertically */
+  justify-content: center; /* Center text horizontally */
+  border: 2px solid #f57616;
+  background-color: #f57616;
+  border-radius: 4px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  height: 3.2em;
+  width: 7em;
+  line-height: 2.8em; /* Center text vertically */
+}

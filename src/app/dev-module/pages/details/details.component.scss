@@ -1,0 +1,118 @@
+.details {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  
+  .content {
+    display: flex;
+    height: 100%;
+  }
+  
+  .body {
+    display: flex;
+    flex: 1; /* Occupy remaining width */
+    height: 100vh;
+    margin: 0em auto;
+    background-color: #fff;
+    padding: 1em;
+    border: 2px solid #ff7918;
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    overflow-y:visible;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0.5em 0;
+    transition: 0.5s;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+  }
+  
+  h3 b {
+    font-size: 1.2em;
+    margin-right: 0.5em;
+    transition: 0.5s;
+    color: rgb(230, 78, 22);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+  }
+
+  .enrelations{
+    display: flex;
+    justify-content: center;
+    background-color: #ff7900;
+    width: 80%;
+    margin: auto;
+    color: rgb(234, 226, 223);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    
+  }
+  
+  .btn-inscription {
+    display: grid;
+    margin: 1em auto;
+    height: 3.5em;
+    border-radius: 3px;
+    width: 10vw;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.3s;
+    background-color: #f16e00;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, sans-serif; /* Change font family */
+    text-decoration: none;
+  }
+  
+  .btn-inscription:hover {
+    background-color: rgb(230, 78, 22);
+  }
+  
+  .left {
+    display: grid;
+    width: 20vw;
+  }
+  
+  .middle {
+    width: 50%;
+    margin: auto;
+    margin-top: 2VH;
+    background-color: #fff;
+    padding: 2em;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+  }
+  
+  .right {
+    width: 20vw;
+    display: grid;
+  }
+  
+  .formation-en-relation {
+    display: grid;
+    overflow-y: scroll;
+    height: 60vh;
+  }
+  
+  .label-highlight {
+    font-size: 1.2em;
+    color: rgb(230, 78, 22);
+    transition: 0.5s;
+  }
+  
+  .label-highlight:hover {
+    color: #ff7900;
+  }
+  

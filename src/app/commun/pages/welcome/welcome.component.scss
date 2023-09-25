@@ -1,0 +1,275 @@
+
+.left{
+
+  width: 50vw;
+  align-items: center;
+  height: auto;
+}
+
+.image-carousel{
+  display: flex;
+  align-items: center;
+}
+.image{
+  
+  display: grid;
+  align-items: center;
+  width: 100VW;
+  height: 48vw;
+  box-shadow: 2px 2px 5px rgb(170, 170, 170);
+  margin: auto;
+  padding: auto;
+}
+.content{
+  display: flex;
+  justify-content: space-around   ;
+  align-items: center;
+  vertical-align: middle;
+  height: 100vh; 
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35vw;
+}
+.toast{
+  position: absolute;
+  bottom: 0;
+  margin-bottom:2em ;
+  border: none;
+  background-color: #673ab7;
+  font-size: 18px;
+  text-align:center;
+  padding: 1em ;
+}
+.actions{
+  display: grid;
+  margin: 1em auto;
+  justify-content: center;
+  background-color: #000;;
+  width: 20vw;   
+  padding: 1em; 
+}
+
+.input{
+  padding: 1em 0.5em;
+  border: 1px solid #000;
+}
+
+span{
+  color: gray;
+}
+
+.connecter{
+  background-color:#673ab7 ;
+  border: none;
+}
+.registre{
+  background-color:#000 ;
+  border: none;
+}
+button:disabled,
+button[disabled]{
+background-color:#000;
+color: #666666;
+}
+.login{
+  margin: 1em auto;
+  display: grid;
+  height: 3.5em;
+
+  border:2px solid #000;
+  border-radius: 0;
+  color: #000;
+  font-size: 16px;
+}
+
+.nav {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%; /* Adjust padding on left and right */
+  height: 4vw;
+}
+
+.material-symbols-outlined {
+  font-size: 1.5em;
+  color: black; /* White color for icons */
+
+  justify-content: space-between;
+}
+
+.navbar {
+  z-index: 1000;
+  width: 100vw;
+  background-color:black ;
+  position: fixed;
+  
+
+}
+
+.line {
+  display: flex;
+  margin: auto 0.5em;
+}
+
+.menu-icon {
+  margin-right: 0.5em;
+}
+
+.sofrecomimg {
+  
+
+  filter: brightness(1.5) sepia(1) hue-rotate(160deg);
+
+}
+  
+.body{
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+
+.actions {
+  display: flex;
+  align-items: center;
+  margin-left:10cm;
+}
+
+.btn-link {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  color: #ff9f40;
+  text-decoration: none;
+  transition: color 0.3s;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-link:hover {
+  color: #ff7900;
+  text-decoration: underline;
+}
+
+
+.btn-secondary {
+  background-color:  #ff9f40;
+  border: 5px;
+  border-radius: 5px;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.connecter .registre{
+  width: 50px;
+
+}
+
+.btn-secondary:hover {
+  background-color: #ff7900;
+}
+
+/* welcome.component.scss */
+.elearning {
+  background-color: #ff9f40;
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+
+.welc {
+  margin: auto;
+  color: #f7ab5e;
+  padding: 1em;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width:1400px; /* Adjust as needed */
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-link {
+  font-size: 1.5em;
+  color: #ff7900; /* Orange color */
+  margin: 0 0.5em;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #ff9f40; /* Lighter orange color on hover */
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact-link {
+  color: #ff9f40;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.contact-link i {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+
+.contact-link:hover {
+  color: #ff7900;
+}
+
+.dropdown-menu {
+ 
+  border-radius: 7px; /* Border radius */
+  border-color: #ff7900;
+  background-color: #ff9f40;
+  padding: auto;
+  margin-top: 7px;
+}
+
+.orange-theme {
+  color: #f1cfb1; /* Text color to white */
+  background-color: #ff9f40; /* Orange background color */
+ 
+  border-radius: 4px; /* Border radius */
+  text-decoration: none;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.orange-theme:hover {
+  background-color: #ff7900; /* Lighter orange background color on hover */
+  border-color: #ff7900; /* Lighter orange border color on hover */
+  cursor: pointer;
+}
+
+
+
+

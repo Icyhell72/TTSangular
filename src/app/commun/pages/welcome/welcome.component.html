@@ -1,0 +1,66 @@
+<!-- app-header.component.html -->
+<nav class="navbar navbar-expand-lg navbar-dark ">
+    <div class="container-fluid nav">
+      <div class="navbar-brand">
+        <a class="stretched-link" href="#elearning">
+          <img
+            src="../../../../assets/icons/sofrecom.png"
+            alt="sofrecom"
+            loading="lazy"
+            class="sofrecomimg"
+          />
+        </a>
+      </div>
+      <div id="welc" class="welc">
+        <!-- Description about e-learning and trainings -->
+        Bienvenue sur notre platforme de formation Sofrecom.
+      </div>
+      <div class="actions">
+        <div class="btn-group" role="group">
+          <a class="btn-link" (click)="connect()">Connecter</a>
+          <div class="dropdown">
+            <a class="btn-link dropdown-toggle " id="inscriptionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              S'inscrire
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="inscriptionDropdown">
+              <li><a class="dropdown-item orange-theme" (click)="registre()" >En tant que Developpeur</a></li>
+              <li><a class="dropdown-item orange-theme" (click)="registremanager()" >En tant que Manager</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </nav>
+
+
+  <div data-aos="fade-right" class="left">
+    <img class="image" [src]="getImageSource(currentImageIndex)" alt="" class="image" />
+  </div>
+
+  <div id="elearning" class="elearning">
+    Découvrez un monde de possibilités sur notre plateforme de formation en ligne. 
+    Du novice au professionnel, enrichissez vos compétences avec des cours dirigés par des experts. 
+    Restez en avance grâce à des technologies de pointe et méthodologies éprouvées. 
+    Inscrivez-vous dès maintenant pour façonner votre avenir.
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://www.facebook.com/Icyhell72" class="social-link"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/khaireddine-rhouma/" class="social-link"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="contact">
+        <a href="mailto:noreply.ttst@gmail.com" class="contact-link">
+          <i class="fas fa-envelope"></i>
+          Pour plus de formation, contactez-nous
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  
+

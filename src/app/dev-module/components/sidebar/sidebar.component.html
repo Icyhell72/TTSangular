@@ -1,0 +1,42 @@
+<div class="side">
+  <h3 class="title">Formations</h3>
+
+  <li class="list" [routerLink]="['/dev', 'accueil']">
+    <span class="material-symbols-outlined"> home </span>
+    Accueil
+  </li>
+  <li class="list" [routerLink]="['/dev','mes-formation', 'favoris']">
+    <span class="material-symbols-outlined"> favorite </span>
+    Favoris
+  </li>
+  <h3 class="title">Mon Espace</h3>
+  <li class="list" [routerLink]="['/dev', 'mes-formation','assigne']">
+    <span class="material-symbols-outlined"> app_registration </span>
+    Formations assignées
+    <span
+      *ngIf="numberAssinged$ | async as numberAssinged"
+      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info text-white"
+      class="badge"
+    >
+      {{ numberAssinged }}
+    </span>
+  </li>
+
+  <li class="list" [routerLink]="['/dev', 'mes-formation','en-cours']">
+    <span class="material-symbols-outlined"> rotate_right </span>
+    Formations en cours
+   
+  </li>
+  <li class="list" [routerLink]="['/dev', 'mes-formation','termine']">
+    <span class="material-symbols-outlined"> check_small </span>
+    Formations terminées
+  </li>
+  <li class="list" [routerLink]="['/dev', 'mes-formation', 'uploadcv']">
+    <span class="material-symbols-outlined"> cloud_upload </span>
+    Chargez CV
+  </li>  
+  <li class="list" [routerLink]="['/dev', 'mes-formation','stat']">
+    <span class="material-symbols-outlined" > verified_user </span>
+    Statistiques
+  </li>
+</div>

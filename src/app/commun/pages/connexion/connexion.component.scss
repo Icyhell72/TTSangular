@@ -1,0 +1,287 @@
+
+.left{
+
+    width: 75vw;
+    align-items: center;
+    height: auto;
+}
+
+.image-carousel{
+    display: flex;
+    align-items: center;
+}
+.image{
+    
+  display: grid;
+  align-items: center;
+  width: 100VW;
+  height: 48vw;
+
+}
+
+.stretched-link:hover{
+  cursor: pointer;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around   ;
+    align-items: center;
+    vertical-align: middle;
+    height: 100vh; 
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25vw;
+}
+.toast{
+    position: absolute;
+    bottom: 0;
+    margin-bottom:2em ;
+    border: none;
+    background-color: #673ab7;
+    font-size: 18px;
+    text-align:center;
+    padding: 1em ;
+}
+.actions{
+    display: grid;
+    margin: 1em auto;
+    justify-content: center;
+    background-color: #000;;
+    width: 20vw;   
+    padding: 1em; 
+}
+
+.input{
+    padding: 1em 0.5em;
+    border: 1px solid #000;
+}
+
+span{
+    color: gray;
+}
+
+.connecter{
+    background-color:#673ab7 ;
+    border: none;
+}
+.registre{
+    background-color:#000 ;
+    border: none;
+}
+button:disabled,
+button[disabled]{
+  background-color:#000;
+  color: #666666;
+}
+.login{
+    margin: 1em auto;
+    display: grid;
+    height: 3.5em;
+
+    border:2px solid #000;
+    border-radius: 0;
+    color: #000;
+    font-size: 16px;
+}
+
+.nav {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%; /* Adjust padding on left and right */
+  height: 4vw;
+}
+
+.material-symbols-outlined {
+  font-size: 1.5em;
+  color: black; /* White color for icons */
+
+  justify-content: space-between;
+}
+
+.navbar {
+  z-index: 1000;
+  width: 100vw;
+  background-color:black ;
+  position: fixed;
+  
+
+}
+
+.line {
+  display: flex;
+  margin: auto 0.5em;
+}
+
+.menu-icon {
+  margin-right: 0.5em;
+}
+
+.sofrecomimg {
+  
+
+  filter: brightness(1.5) sepia(1) hue-rotate(160deg);
+
+}
+    
+  .body{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100vw;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width:1400px; /* Adjust as needed */
+  }
+  
+  .social-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-link {
+    font-size: 1.5em;
+    color: #ff7900; /* Orange color */
+    margin: 0 0.5em;
+    text-decoration: none;
+  }
+  
+  .social-link:hover {
+    color: #ff9f40; /* Lighter orange color on hover */
+  }
+  
+  .contact {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-link {
+    color: #ff9f40;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-link i {
+    font-size: 1.5em;
+    margin-right: 0.5em;
+  }
+  
+  .contact-link:hover {
+    color: #ff7900;
+  }
+
+
+  h3 {
+    margin: auto;
+    color: #f7ab5e;
+    padding: 1em;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+
+  .login {
+    margin: 1em auto;
+    display: flex; /* Use flexbox to center text vertically */
+    justify-content: center; /* Center text horizontally */
+    border: 2px solid #db5f20;
+    background-color: #db5f20;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    height: 3.2em;
+    width: 7em;
+    line-height: 2.8em; /* Center text vertically */
+  }
+  
+  button:disabled,
+  button[disabled] {
+    margin: 1em auto;
+    display: flex; /* Use flexbox to center text vertically */
+    justify-content: center; /* Center text horizontally */
+    border: 2px solid #db8120;
+    background-color: #db8120;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    cursor: wait;
+    width: 7em;
+    height: 3.2em;
+    line-height: 2.8em; /* Center text vertically */
+  }
+  
+  .login:after {
+    margin: 1em auto;
+    display: flex; /* Use flexbox to center text vertically */
+    justify-content: center; /* Center text horizontally */
+    border: 2px solid #db5f20;
+    background-color: #db5f20;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    width: 7em;
+    height: 3.2em;
+    line-height: 2.8em; /* Center text vertically */
+  }
+  
+  .login:hover {
+    margin: 1em auto;
+    display: flex; /* Use flexbox to center text vertically */
+    justify-content: center; /* Center text horizontally */
+    border: 2px solid #f57616;
+    background-color: #f57616;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    height: 3.2em;
+    width: 7em;
+    line-height: 2.8em; /* Center text vertically */
+  }
+  
+
+  /* Center all content vertically */
+.content {
+
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Style labels and inputs with orange borders */
+.form-label {
+  color: #f7ab5e; /* Orange color */
+}
+
+.input {
+  padding: 1em 0.5em;
+  border: 1px solid #f7ab5e; /* Orange border */
+  border-radius: 4px;
+  margin: 0.5em 0;
+  width: 24vw;
+}
+
+span {
+  margin-left: 5vw;
+}
