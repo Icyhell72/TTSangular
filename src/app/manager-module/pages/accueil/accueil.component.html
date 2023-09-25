@@ -1,29 +1,72 @@
 <div class="accueil">
-  <app-header></app-header>
-
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <div class="container-fluid nav">
+      <div class="navbar-brand">
+        <a class="stretched-link" [routerLink]="['/dev', 'accueil']">
+          <img
+            src="../../../../assets/icons/sofrecom.png"
+            alt="sofrecom"
+            loading="lazy"
+            class="sofrecomimg"
+          />
+        </a>
+      </div>
+      <ul data-aos="fade-down" class="nav nav-tabs mt-2 mb-2">
+        <li class="nav-item">
+          <button
+            (click)="changeTabToFormation()"
+            class="nav-link"
+            [ngClass]="{ active: formationEntiteTabsState }"
+            aria-current="page"
+          >
+            Formation
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            (click)="changeTabToEntite()"
+            class="nav-link"
+            [ngClass]="{ active: !formationEntiteTabsState }"
+            aria-current="page"
+          >
+            Entite Formatrice
+          </button>
+        </li>
+      </ul>
+      <button
+        mat-button
+        [matMenuTriggerFor]="menu"
+        class="btn-menu"
+        aria-label="Example icon-button with a menu"
+      >
+  
+      <span
+          style="color:darkslategray; font-size: 4em"
+          class="material-symbols-outlined"
+        >
+          person
+        </span>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item [routerLink]="['/manager', 'accueil']">Acceuil</button>
+        <button mat-menu-item [routerLink]="['/manager', 'members']">Membres</button>
+        <button
+          mat-menu-item
+          (click)="deconnexion()"
+          [routerLink]="['/connexion']"
+        >
+          <div class="line">
+            <span
+            style="color:darkslategray; " 
+            class="material-symbols-outlined menu icon"> logout </span>
+            <span class="menu">  Déconnexion  </span>
+          </div>
+        </button>
+      </mat-menu>
+    </div>
+  </nav>
   <div class="content">
-    <ul data-aos="fade-down" class="nav nav-tabs mt-2 mb-2">
-      <li class="nav-item">
-        <button
-          (click)="changeTabToFormation()"
-          class="nav-link"
-          [ngClass]="{ active: formationEntiteTabsState }"
-          aria-current="page"
-        >
-          Formation
-        </button>
-      </li>
-      <li class="nav-item">
-        <button
-          (click)="changeTabToEntite()"
-          class="nav-link"
-          [ngClass]="{ active: !formationEntiteTabsState }"
-          aria-current="page"
-        >
-          Entite Formatrice
-        </button>
-      </li>
-    </ul>
+
     <app-table-formation
       *ngIf="formationEntiteTabsState"
       data-aos="fade-up"
@@ -31,8 +74,6 @@
     <app-table-entite
       *ngIf="!formationEntiteTabsState"
       data-aos="fade-up"
-    ></app-table-entite>
-
-    
+    ></app-table-entite>    
   </div>
 </div>

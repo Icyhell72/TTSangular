@@ -38,14 +38,14 @@
       </span>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item [routerLink]="['/dev', 'parametre']">
-        <div class="line" >
-          <span
-          style="color:darkslategray; " 
-          class="material-symbols-outlined menu icon" > settings </span>
-          <span class="menu">  Paramètres  </span>
-        </div>
+      <button mat-menu-item [routerLink]="['/manager', 'accueil']">
+      Acceuil
       </button>
+
+      <button mat-menu-item [routerLink]="['/manager', 'members']">
+        Membres
+        </button>
+
       <button
         mat-menu-item
         (click)="deconnexion()"

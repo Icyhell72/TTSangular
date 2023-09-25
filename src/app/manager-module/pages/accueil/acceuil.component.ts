@@ -53,5 +53,9 @@ export class AccueilManagerComponent implements OnInit {
       },
     });
   }
+
+  deconnexion(){
+    sessionStorage.clear()
+  }
 }
 
