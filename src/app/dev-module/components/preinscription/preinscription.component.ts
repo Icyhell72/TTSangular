@@ -24,7 +24,7 @@ export class PreinscriptionComponent implements OnInit{
   delete(id: number) {
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
-        confirmButton: 'btn btn-success',
+        confirmButton: 'btn btn-warning',
         cancelButton: 'btn btn-danger',
       },
       buttonsStyling: false,
@@ -37,8 +37,8 @@ export class PreinscriptionComponent implements OnInit{
         text: "Voulez vous supprimer la pré-inscription!",
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonText: 'Confirmé!',
-        cancelButtonText: 'Annulé!',
+        confirmButtonText: 'Confirmer',
+        cancelButtonText: 'Annuler',
         reverseButtons: true,
       })
       .then((result) => {
@@ -49,14 +49,14 @@ export class PreinscriptionComponent implements OnInit{
             },
           });
           swalWithBootstrapButtons.fire(
-            'Deleted!',
-            "La pré-inscription est supprimé avec succès.",
+            'Supprimée!',
+            "",
             'success'
           );
         } else if (result.dismiss === Swal.DismissReason.cancel) {
           swalWithBootstrapButtons.fire(
-            'Annulé',
-            "L'opération est annulée",
+            'Suppression est annulée',
+            "",
             'error'
           );
         }

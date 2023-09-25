@@ -1,14 +1,5 @@
 <table class="table" data-aos="fade-up">
-  <thead>
-    <tr>
-      <th scope="col" style="color: transparent;">id</th>
-      <th scope="col">Nom</th>
-      <th scope="col">Début</th>
-      <th scope="col">Durée</th>
-      <th scope="col">Entité Formatrice</th>
-      <th scope="col">Actions</th>
-    </tr>
-  </thead>
+
   <tbody *ngIf="formationPreInscris$ | async as formations">
     <tr *ngFor="let formation of formations" class="example-button">
       <td>
@@ -26,7 +17,7 @@
       <td>{{ formation.entiteFormatrice }}</td>
       <td>
         <button *ngIf="formation.idFormation" mat-button class="action refuse" (click)="delete(formation.idFormation)">
-          Delete
+          Supprimer
         </button>
       </td>
     </tr>

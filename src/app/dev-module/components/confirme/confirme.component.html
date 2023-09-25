@@ -1,14 +1,5 @@
 <table class="table" data-aos="fade-up">
-  <thead>
-    <tr>
-      <th scope="col" style="color: transparent;">id</th>
-      <th scope="col">Nom</th>
-      <th scope="col">Début</th>
-      <th scope="col">Durée</th>
-      <th scope="col">Heure début</th>
-      <th scope="col">Entité</th>
-    </tr>
-  </thead>
+
   <tbody *ngIf="confirmed$ | async as formations">
     <tr *ngFor="let formation of formations" class="example-button">
       <td>
@@ -23,7 +14,7 @@
       <td>{{ formation.nomFormation }}</td>
       <td>{{ formation.dateDebut }}</td>
       <td>{{ formation.duree }} Jour(s)</td>
-      <td>{{ formation.time }}</td>
+      <td>{{ formation.time }} AM</td>
       <td>{{ formation.entiteFormatrice }}</td>
     </tr>
   </tbody>

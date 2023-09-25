@@ -46,7 +46,7 @@
                 name="password"
                 type="password"
                 class="form-control input"
-                placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
+                placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
                 ngModel
                 required
               />
@@ -84,16 +84,11 @@
           </div>
         </div>
       </div>
-
       <button
         [disabled]="update.invalid || dataDev.categories.length== 0"
-        mat-flat-button
-        color="primary"
-        class="btn-inscription chip-op bg-warning text-white" 
+        class="btn-inscription" 
         (click)="updateDev(categories)"
-      >
-        Mettre à jour
-      </button>
+      >Mettre à jour</button>
     </div>
   </div>
 </div>
