@@ -17,20 +17,14 @@
             (click)="changeTabToFormation()"
             class="nav-link"
             [ngClass]="{ active: formationEntiteTabsState }"
-            aria-current="page"
-          >
-            Formation
-          </button>
+            aria-current="page">Formations</button>
         </li>
         <li class="nav-item">
           <button
             (click)="changeTabToEntite()"
             class="nav-link"
             [ngClass]="{ active: !formationEntiteTabsState }"
-            aria-current="page"
-          >
-            Entite Formatrice
-          </button>
+            aria-current="page">Entite Formatrice</button>
         </li>
       </ul>
       <button
@@ -48,21 +42,21 @@
         </span>
       </button>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item [routerLink]="['/manager', 'accueil']">Acceuil</button>
-        <button mat-menu-item [routerLink]="['/manager', 'members']">Membres</button>
-        <button
-          mat-menu-item
-          (click)="deconnexion()"
-          [routerLink]="['/connexion']"
-        >
+        <button mat-menu-item [routerLink]="['/manager', 'accueil']">
+          <i style="color: darkslategray; " class="fas fa-home"></i> Acceuil <!-- Added home icon -->
+        </button>
+        <button mat-menu-item [routerLink]="['/manager', 'members']">
+          <i style="color: darkslategray; " class="fas fa-users"></i> Membres <!-- Added users icon -->
+        </button>
+        <button mat-menu-item (click)="deconnexion()" [routerLink]="['/connexion']">
           <div class="line">
-            <span
-            style="color:darkslategray; " 
-            class="material-symbols-outlined menu icon"> logout </span>
-            <span class="menu">  Déconnexion  </span>
+            <span style="color: darkslategray; " class="fas fa-sign-out-alt menu icon"></span> <!-- Changed to sign-out icon -->
+            <span class="menu">Déconnexion</span>
           </div>
         </button>
       </mat-menu>
+      
+      
     </div>
   </nav>
   <div class="content">

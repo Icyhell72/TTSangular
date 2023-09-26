@@ -39,23 +39,15 @@
     </button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item [routerLink]="['/manager', 'accueil']">
-      Acceuil
+        <i style="color: darkslategray; " class="fas fa-home"></i> Acceuil <!-- Added home icon -->
       </button>
-
       <button mat-menu-item [routerLink]="['/manager', 'members']">
-        Membres
-        </button>
-
-      <button
-        mat-menu-item
-        (click)="deconnexion()"
-        [routerLink]="['/connexion']"
-      >
+        <i style="color: darkslategray; " class="fas fa-users"></i> Membres <!-- Added users icon -->
+      </button>
+      <button mat-menu-item (click)="deconnexion()" [routerLink]="['/connexion']">
         <div class="line">
-          <span
-          style="color:darkslategray; " 
-          class="material-symbols-outlined menu icon"> logout </span>
-          <span class="menu">  Déconnexion  </span>
+          <span style="color: darkslategray; " class="fas fa-sign-out-alt menu icon"></span> <!-- Changed to sign-out icon -->
+          <span class="menu">Déconnexion</span>
         </div>
       </button>
     </mat-menu>
