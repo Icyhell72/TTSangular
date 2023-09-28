@@ -2,7 +2,7 @@
 .table{
     display: grid;
     margin: 1em auto;
-    border: 2px solid #000;
+    border: none;
     width: 60vw;
 }
 tbody{
@@ -17,7 +17,7 @@ tr{
     grid-template-columns:1fr 1fr 1fr 1.7fr 0.3fr;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #da5f0d;
     padding: 0;
 }
 td{
@@ -47,6 +47,6 @@ th{
     background-color: #ff7900;
     color: #000;
     height: 3.5em;
-    border: 2px solid #000;
+    border: 2px solid #ff7900;
     width: 10vw;
 }

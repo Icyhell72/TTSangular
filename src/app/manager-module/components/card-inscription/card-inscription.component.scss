@@ -1,11 +1,13 @@
 .line{
     display: flex;
     justify-content: space-between;
-    border: 2px solid #000;
     padding: 1em ;
     margin: 1em 2em;
     width: 40vw;
     align-items: center;
+    background-color: #f66f4d00;
+    border: 2px solid #ed441ab5;
+    border-radius: 4px;
     
 }
 
@@ -20,12 +22,13 @@ p{
     margin: 0;
 }
 .action{
-    border: 2px solid #000;
-    border-radius: 0;
+    border: 2px solid #ee5930;
+    border-radius: 4px;
     color: #000;
 }
 .accept{
-    background-color: #32c832;
+    background-color: #ed441ab5;
+    border: 2px solid #ed441ab5;
 }
 .actions{
     display: flex;
@@ -34,10 +37,18 @@ p{
 
 }
 .refuse{
-    background-color: #cd3c14;
+    background-color: #ed441ab5;
+    border: 2px solid #ed441ab5;
     
 }
-.action:hover{
-    background-color: #000;
+.refuse:hover{
+    background-color: rgb(255, 81, 0);
+    border: 2px solid rgb(255, 81, 0);
+    color: white;
+}
+
+.accept:hover{
+    background-color: rgb(0, 255, 26);
+    border: 2px solid rgb(0, 255, 26);
     color: white;
 }

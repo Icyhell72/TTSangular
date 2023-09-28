@@ -1,9 +1,6 @@
+<div class="body">
 <div class="search-bar" data-aos="fade-right">
   <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label search-title">
-      Rechercher des formations:
-    </label>
-
     <div class="search">
       <input
         (keyup.enter)="searchBy(filter.value, text.value)"
@@ -12,7 +9,7 @@
         class="form-control"
         #text="ngModel"
         id="exampleFormControlInput1"
-        placeholder="je recherche une formation par:Titre ,Compétances ...."
+        placeholder="Recherche des formations par titre, compétances.."
       />
       <select #filter class="form-select" aria-label="Default select example">
         <option selected value="Nom">Nom</option>
@@ -22,24 +19,24 @@
     </div>
   </div>
   <mat-chip-listbox [(ngModel)]="chipsValue" (click)="filterBy()" class="mb-3">
-    <mat-chip-option value="web">Développement Web </mat-chip-option>
-    <mat-chip-option value="mobile">Développement Mobile </mat-chip-option>
-    <mat-chip-option value="bd"> Bases de données</mat-chip-option>
-    <mat-chip-option value="reseau">Réseaux et Sécurité </mat-chip-option>
-    <mat-chip-option value="cloud">Cloud Computing </mat-chip-option>
-    <mat-chip-option value="ia">IA </mat-chip-option>
-    <mat-chip-option value="devops">DevOps </mat-chip-option>
-    <mat-chip-option value="gestion">Gestion de Projets </mat-chip-option>
+    <mat-chip-option class="bg-warning" value="web">Développement Web </mat-chip-option>
+    <mat-chip-option class="bg-warning" value="mobile">Développement Mobile </mat-chip-option>
+    <mat-chip-option class="bg-warning" value="bd"> Bases de données</mat-chip-option>
+    <mat-chip-option class="bg-warning" value="reseau">Réseaux et Sécurité </mat-chip-option>
+    <mat-chip-option class="bg-warning" value="cloud">Cloud Computing </mat-chip-option>
+    <mat-chip-option class="bg-warning" value="ia">IA </mat-chip-option>
+    <mat-chip-option class="bg-warning" value="devops">DevOps </mat-chip-option>
+    <mat-chip-option class="bg-warning" value="gestion">Gestion de Projets </mat-chip-option>
   </mat-chip-listbox>
   <table class="table" data-aos="fade-left">
     <thead>
       <tr>
-        <th scope="col"></th>
+        <th class="th-logo" scope="col">Logo</th>
         <th scope="col">Nom</th>
         <th scope="col">Debut</th>
         <th scope="col">Durée</th>
-        <th scope="col">Nombre de Place</th>
-        <th scope="col">Entité Formatrice</th>
+        <th scope="col">Nb Place</th>
+        <th scope="col">E. Formatrice</th>
         <th scope="col">Avancement</th>
         <th scope="col">Actions</th>
       </tr>
@@ -89,8 +86,8 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <span class="material-symbols-outlined"> more_vert </span>
-            </button>
+              <span class="material-symbols-outlined"></span>
+            Détails</button>
             <ul class="dropdown-menu">
               <li>
                 <button
@@ -158,6 +155,9 @@
       </button>
     </tfoot>
   </table>
+</div>
+
+
 </div>
 <!-- <app-add-formation
   style="width: 0;height: 0;"

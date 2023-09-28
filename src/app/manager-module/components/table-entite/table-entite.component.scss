@@ -1,74 +1,71 @@
 
-.table{
-    border: 2px solid #000;
-
-}
-.menu
-{
-    height: 3em;
-    width: 3em;
-}
-.menu span{
-    display: grid;
-    margin: auto;
-}
-
-
 tbody{
-    height: 40vh;
+    height: 30vh;
     display: block;
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
 tr{
     display: grid;
-    grid-template-columns: 0.75fr  0.75fr  3fr 0.5fr;
+    grid-template-columns:0.75fr 1.25fr 1.25fr 1fr 0.75fr 1.5fr 1fr 0.5fr;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #000;
+    padding: 0;
 }
 td{
     display: grid;
     align-items: center;
     padding:1em 0;
+    background-color: transparent;
+    margin: 0;
 }
-
 th
 {
-    padding: 1em 0;
+    padding: 0;
     margin: 0;
 }
 .search-title{
-    color: #000000;
+    color: #ff5100;
     font-size: 1.5em;
     font-weight: bolder;
 }
 
+.menu span{
+    display: grid;
+    margin: auto;
+
+}
 .search{
-    padding: 0.5em;
+padding: 0.3em;
 
     display: flex;
-    border: 2px solid rgba(0, 0, 0);
 }
-.add-btn{
-    background-color: #32c832;
-    border: 2px solid #000;
-    border-radius: 0;
-}
+
 .form-control{
     padding: 0.5em;
     width: 75%;
     border: none;
-    border-top-left-radius:2em ;
-    border-bottom-left-radius:2em;
+
 }
 .form-select{
-    border: 2px solid #000;
     width:25%;
-    height: 2.5em  ;
+    height: 2em  ;
     font-size: 20px;
     text-align: center;
     color: #000;
+    border: 1px solid #ff7900;
+   
+    border-radius: 4px;
+ 
+}
+
+.search{
+    border: 2px solid #ff7900;
+    border-radius: 4px;
+    margin-top: -30px;
+
 }
 .form-select option{
     color: #000;
@@ -76,9 +73,24 @@ th
     background-color:#fff;
     font-size: 18px;
 }
+
+mat-spinner{
+    display:grid;
+    z-index: 1000;
+    margin:2em auto;
+    position: absolute;
+}
+img{
+    margin-left: 1em;
+}
+.add-btn{
+    background-color: #ff7900;
+    border: 2px solid #ff7900;
+    border-radius: 4px;
+}
 tfoot{
     display:flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 1em;
 }
 .add-icon{
@@ -90,8 +102,9 @@ tfoot{
 }
 
 .add-btn:hover{
-    background-color: #000;
-    color:white;
+    background-color: #ff5100;
+    border: 2px solid #ff5100;
+    border-radius: 4px;
     
 }
 .add-btn:active{
@@ -99,4 +112,146 @@ tfoot{
     color:#000;
     scale:0.9;
     
+}
+
+.details-btn{
+    background-color: #0dcaf0;
+    border-radius: 0;
+    color: #fff;
+}
+
+.edit-btn{
+    background-color: #ff7900;
+    color: #fff;
+    border-radius: 0;
+}
+
+.delete-btn{
+    color: #fff;
+    background-color: #cd3c14;
+    border-radius: 0;
+}
+
+.confirm-btn{
+    color: #fff;
+    background-color: #32c832;
+    border-radius: 0;
+}
+.dropdown-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.material-symbols-outlined{
+    margin: auto 0.5em;
+}
+.confirmed{
+    background-color: #e3e3e3;
+}
+
+.body {
+    height: 85vh;
+    width: 80vw;
+}
+tbody{
+    height: 45vh;
+    width: 80vw;
+    border: 2px solid #ff7900;
+    border-radius: 4px;
+}
+.table{
+    border: none;
+
+}
+th {
+    background-color:#ff770000 ;
+    border: none;
+    color: #ff7900;
+    height: 4vh;
+}
+
+.dropdown-menu {
+        background-color: #f2a867;
+        border: 2px solid #f2a867;
+        border-radius: 4px;
+    
+}
+
+.dropdown-menu :hover{
+    background-color: #ff7900;
+    border: 2px solid #ff7900;
+    border-radius: 4px;
+
+}
+
+.dropdown{
+    background-color: #ff7900;
+    border: 2px solid #ff7900;
+    border-radius: 4px;
+
+}
+
+
+
+
+.btn-secondary
+{
+    background-color: #ff7900;
+    border: 2px solid #ff7900;
+    border-radius: 4px;
+}
+
+.btn-secondary:hover
+{
+    background-color: #ff5e00;
+    border: 2px solid #ff5e00;
+    border-radius: 4px;
+}
+
+tr {
+    border-bottom: 1px transparent;
+}
+
+td:hover
+{
+    background-color: #fbc4a4;
+    border: 2px solid #fbc4a4;
+    border-radius: 4px;
+}
+
+th { width: 20vw;
+    padding: 1em;
+    margin-bottom: 10px;
+}
+td { width: 20vw;
+    padding: 1em;
+    margin-bottom: 10px;
+}  
+
+.btn-secondary{
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown{
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    margin-left: 5vw;
+}
+
+.th-actions {
+    margin-left : 8vw ;
+    width: 12vw;
+}
+
+.form-select{
+    color: orangered;
 }

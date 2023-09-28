@@ -65,7 +65,7 @@ export class TableEntiteComponent {
   delete(id: number) {
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
-        confirmButton: 'btn btn-success',
+        confirmButton: 'btn btn-warning',
         cancelButton: 'btn btn-danger',
       },
       buttonsStyling: false,
@@ -74,8 +74,8 @@ export class TableEntiteComponent {
 
     swalWithBootstrapButtons
       .fire({
-        title: 'Vous etes sur?',
-        text: "Voulez vous supprimer l'entité formatrice!",
+        title: 'Valider la suppréssion ?',
+        text: "",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonText: 'Confirmé!',
@@ -90,14 +90,14 @@ export class TableEntiteComponent {
             },
           });
           swalWithBootstrapButtons.fire(
-            'Deleted!',
-            "L'entite est supprimé avec succès.",
+            'Supprimé!',
+            "",
             'success'
           );
         } else if (result.dismiss === Swal.DismissReason.cancel) {
           swalWithBootstrapButtons.fire(
-            'Annulé',
-            "L'opération est annulée",
+            'Annuler',
+            "",
             'error'
           );
         }

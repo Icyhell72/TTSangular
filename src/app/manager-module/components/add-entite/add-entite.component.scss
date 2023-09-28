@@ -1,5 +1,7 @@
 .inputs {
-    border: 2px solid #000;
+    border: 2px solid #ff7900; /* Updated border color */
+    border-radius: 4px; /* Added border-radius */
+    font-family: 'Helvetica Neue', sans-serif; /* Updated font family */
 }
 
 .body {
@@ -11,8 +13,9 @@
 }
 
 tr {
-    border: none;
+    border: 2px solid #ff7900; /* Updated border color */
     margin: 3em 0;
+    border-radius: 4px; /* Added border-radius */
 }
 
 td {
@@ -29,7 +32,9 @@ td {
     padding: 0.5em;
     height: 3em;
     width: 100%;
-    border: 2px solid #000;
+    border: 2px solid #ff7900; /* Updated border color */
+    border-radius: 4px; /* Added border-radius */
+    font-family: 'Helvetica Neue', sans-serif; /* Updated font family */
 }
 
 .textarea {
@@ -43,6 +48,7 @@ span {
     font-weight: bolder;
     padding: 0;
     margin: 1em 0;
+    font-family: 'Helvetica Neue', sans-serif; /* Updated font family */
 }
 
 .add-btn {
@@ -50,32 +56,41 @@ span {
     margin: 1em auto;
     height: 3.5em;
     border: none; /* Remove the border */
-    border-radius: 10px;
+    border-radius: 4px; /* Added border-radius */
     width: 15vw;
     background-color: rgb(230, 78, 22);
     color: white;
     font-size: 20px;
     font-weight: bold;
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', sans-serif; /* Updated font family */
     text-align: center;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    border: 2px solid #f8aa65; /* Updated border color */
+    border-radius: 5px; 
 }
 
 .add-btn:hover {
     background-color: #ff6a00; /* Change the hover background color */
+    border: 2px solid #f8aa65; /* Updated border color */
+    border-radius: 5px; 
 }
 
 .inputs {
     margin: 1em 0;
+    border: 2px solid #ff7900; /* Updated border color */
+    border-radius: 4px; /* Added border-radius */
+    font-family: 'Helvetica Neue', sans-serif; /* Updated font family */
 }
 
 button:disabled,
 button[disabled] {
-    background-color: #000;
-    color: #666666;
+    background-color: #f8aa65;
+    color: #ffffff;
+    border: 2px solid #f8aa65; /* Updated border color */
+    border-radius: 5px; 
 }
 
 .orange {
@@ -95,7 +110,7 @@ button[disabled] {
 }
 
 .is-valid {
-    border: 2px solid #32c832;
+    border: 2px solid orange;
 }
 
 h5, h3 {
@@ -103,6 +118,20 @@ h5, h3 {
     margin: 0em;
     height: 1em;
     text-decoration: solid;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ff6a00;
 }
+ tr {
+    border: none;
+ }
+
+ span {
+    color: #cd3c14;
+ }
+
+ .input-group-text{
+    font-size: 14px;
+    font-style: normal;
+    color: #f8aa65;
+    margin-right: 10px;
+ }

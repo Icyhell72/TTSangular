@@ -1,0 +1,26 @@
+.nav{
+    border-bottom: 2px solid rgb(230, 78, 22);
+}
+
+.nav-link {
+    background-color: transparent;
+    color: #FF7F50;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid #FF7F50;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link.active {
+    background-color: #FF7F50; 
+    border: 2px solid #FF7F50; 
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: #ff7f506f; 
+    border: 2px solid #ff7f506f;
+    color: white;
+    text-decoration: none;
+}

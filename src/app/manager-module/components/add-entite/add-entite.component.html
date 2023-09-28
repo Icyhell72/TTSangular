@@ -1,11 +1,11 @@
 <form #entite="ngForm" class="body">
-  <h5 class="modal-title btn-warning" id="staticBackdropLabel">Nouvelle Entite :</h5>
-  <hr />
+  <h5 class="modal-title btn-warning" id="staticBackdropLabel">Détaille de l'Entite :</h5>
+  <br> <br>
   <table class="table">
     <tr>
       <td>
-        <span class="input-group-text bg-warning text-white" id="basic-addon3"
-          >Nom d'Entité Formatrice :</span
+        <span class="input-group-text" id="basic-addon3"
+          >Nom de l'Entité :</span
         >
       </td>
       <td>
@@ -28,7 +28,7 @@
     </tr>
     <tr>
       <td>
-        <span for="textarea" class="input-group-text bg-warning text-white">Description</span>
+        <span for="textarea" class="input-group-text ">Description</span>
       </td>
       <td>
         <textarea
@@ -58,13 +58,12 @@
     </tr>
   </table>
   <button
-    style="border-radius: 0"
     [disabled]="entite.invalid"
-    mat-flat-button
-    class="add-btn  bg-warning text-white" 
+    
+    class="add-btn" 
     (click)="addEntite(entite)"
     color="primary"
   >
-    Ajouter
+    Confirmer
   </button>
 </form>

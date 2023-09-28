@@ -1,9 +1,6 @@
 
 <div class="search-bar"  data-aos="fade-right">
     <div  class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label search-title">
-        Rechercher des entités formatrices:
-      </label>
       <div class="search">
         <input
           (keyup.enter)="searchBy(filter.value,text.value)"
@@ -12,7 +9,7 @@
           class="form-control"
           #text="ngModel"
           id="exampleFormControlInput1"
-          placeholder="je recherche une entité formatrice par:Nom,Description ...."
+          placeholder="Recherche des entités formatrices par nom, description.."
         />
         <select
           #filter
@@ -32,7 +29,7 @@
         <th scope="col">Nom</th>
         <th scope="col">Nombre de formation</th>
         <th scope="col">Description</th>
-        <th scope="col">Actions</th>
+        <th class="th-actions" scope="col">Actions</th>
       </tr>
     </thead>
     <tbody *ngIf="entites$ |async as entites">
@@ -56,7 +53,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span class="material-symbols-outlined"> more_vert </span>
+                <span class="material-symbols-outlined"></span>Editer/Supprimer
               </button>
               <ul class="dropdown-menu">
                 <!-- <li><button class="dropdown-item" >Détails</button></li> -->

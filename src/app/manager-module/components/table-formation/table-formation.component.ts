@@ -50,7 +50,7 @@ export class TableFormationComponent implements OnInit {
     this.chipsValue = '';
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
-        confirmButton: 'btn btn-success',
+        confirmButton: 'btn btn-warning',
         cancelButton: 'btn btn-danger',
       },
       buttonsStyling: false,
@@ -58,19 +58,19 @@ export class TableFormationComponent implements OnInit {
 
     swalWithBootstrapButtons
       .fire({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
+        title: 'Procéder au suppression ?',
+        text: "",
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonText: 'Yes, delete it!',
-        cancelButtonText: 'No, cancel!',
+        confirmButtonText: 'Confirmer',
+        cancelButtonText: 'Annuler',
         reverseButtons: true,
       })
       .then((result) => {
         if (result.isConfirmed) {
           swalWithBootstrapButtons.fire(
-            'Deleted!',
-            'Your file has been deleted.',
+            'Supprimé!',
+            '',
             'success'
           );
           this._commun.deleteFormation(id).subscribe({
@@ -82,8 +82,8 @@ export class TableFormationComponent implements OnInit {
           result.dismiss === Swal.DismissReason.cancel
         ) {
           swalWithBootstrapButtons.fire(
-            'Cancelled',
-            'Your imaginary file is safe :)',
+            'Annuler',
+            '',
             'error'
           );
         }

@@ -35,36 +35,41 @@ th
     font-size: 1.5em;
     font-weight: bolder;
 }
-.menu
-{
-    height: 3em;
-    width: 3em;
-}
+
 .menu span{
     display: grid;
     margin: auto;
+
 }
 .search{
-    padding: 0.5em;
+padding: 0.3em;
 
     display: flex;
-    border: 2px solid rgba(0, 0, 0);
 }
 
 .form-control{
     padding: 0.5em;
     width: 75%;
     border: none;
-    border-top-left-radius:2em ;
-    border-bottom-left-radius:2em;
+
 }
 .form-select{
-    border: 2px solid #000;
     width:25%;
-    height: 2.5em  ;
+    height: 2em  ;
     font-size: 20px;
     text-align: center;
     color: #000;
+    border: 1px solid #ff7900;
+   
+    border-radius: 4px;
+ 
+}
+
+.search{
+    border: 2px solid #ff7900;
+    border-radius: 4px;
+    margin-top: -30px;
+
 }
 .form-select option{
     color: #000;
@@ -83,13 +88,13 @@ img{
     margin-left: 1em;
 }
 .add-btn{
-    background-color: #32c832;
-    border: 2px solid #000;
-    border-radius: 0;
+    background-color: #ff7900;
+    border: 2px solid #ff7900;
+    border-radius: 4px;
 }
 tfoot{
     display:flex;
-    justify-content: end;
+    justify-content:flex-end;
     padding: 1em;
 }
 .add-icon{
@@ -101,8 +106,9 @@ tfoot{
 }
 
 .add-btn:hover{
-    background-color: #000;
-    color:white;
+    background-color: #ff5100;
+    border: 2px solid #ff5100;
+    border-radius: 4px;
     
 }
 .add-btn:active{
@@ -137,7 +143,7 @@ tfoot{
 }
 .dropdown-item{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 .material-symbols-outlined{
@@ -146,3 +152,82 @@ tfoot{
 .confirmed{
     background-color: #e3e3e3;
 }
+
+.body {
+    height: 85vh;
+    width: 80vw;
+}
+tbody{
+    height: 45vh;
+    width: 80vw;
+    border: 2px solid #ff7900;
+    border-radius: 4px;
+}
+.table{
+    border: none;
+
+}
+th {
+    background-color:#ff770000 ;
+    border: none;
+    color: #ff7900;
+    height: 4vh;
+}
+
+.dropdown-menu {
+        background-color: #f2a867;
+        border: 2px solid #f2a867;
+        border-radius: 4px;
+    
+}
+
+.dropdown-menu :hover{
+    background-color: #ff7900;
+    border: 2px solid #ff7900;
+    border-radius: 4px;
+
+}
+
+.dropdown{
+    background-color: #ff7900;
+    border: 2px solid #ff7900;
+    border-radius: 4px;
+
+}
+
+
+
+
+.btn-secondary
+{
+    background-color: #ff7900;
+    border: 2px solid #ff7900;
+    border-radius: 4px;
+}
+
+.btn-secondary:hover
+{
+    background-color: #ff5e00;
+    border: 2px solid #ff5e00;
+    border-radius: 4px;
+}
+
+tr {
+    border-bottom: 1px transparent;
+}
+
+td:hover
+{
+    background-color: #fbc4a4;
+    border: 2px solid #fbc4a4;
+    border-radius: 4px;
+}
+
+.form-select{
+    color: orangered;
+}
+
+.th-logo {
+    margin-left: 10px;
+}
+

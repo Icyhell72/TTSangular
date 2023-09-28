@@ -59,14 +59,13 @@
               <td>{{ dev.prenom }}</td>
               <td>(+216) {{ dev.numero }}</td>
               <td>{{ dev.email }}</td>
-              <td>
+              <td class="td-btn">
                 <button
                   class="btn btn-secondary add-btn"
                   type="button"
                   (click)="addOneMemeber(dev.email)"
                 >
-                  <span class="material-symbols-outlined add-icon">add </span>
-                </button>
+                  <span class="material-symbols-outlined add-icon">add</span> Ajouter</button>
               </td>
             </tr>
             <!-- <div class="spinner-border spinner" role="status" *ngIf="spinner">
@@ -82,8 +81,7 @@
               [disabled]="checkedMail.length == 0"
               (click)="addMembers()"
             >
-              <span class="material-symbols-outlined add-icon">add </span>
-            </button>
+              <span class="material-symbols-outlined add-icon">add</span> Ajouter</button>
           </tfoot>
         </table>
       </div>
@@ -94,3 +92,19 @@
 <div   *ngIf="spinner" class="spinner">
   <app-spinner></app-spinner>
 </div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="social-links">
+      <a href="https://www.facebook.com/Icyhell72" class="social-link"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com" class="social-link"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/khaireddine-rhouma/" class="social-link"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="contact">
+      <a href="mailto:noreply.ttst@gmail.com" class="contact-link">
+        <i class="fas fa-envelope"></i>
+        Pour plus de formation, contactez-nous
+      </a>
+    </div>
+  </div>
+</footer>

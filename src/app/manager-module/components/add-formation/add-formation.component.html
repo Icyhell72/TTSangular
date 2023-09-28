@@ -1,12 +1,9 @@
 <form #formation="ngForm" class="body">
-  <h5 class="modal-title text-warning" id="staticBackdropLabel">Nouvelle formation :</h5>
-  <hr />
+  <h5 class="modal-title text-warning" id="staticBackdropLabel">Détails du formation :</h5>
+  <br /><br />
   <table class="table">
     <tbody>
       <tr>
-        <td>
-          <span class=" text-warning ">Nom :</span>
-        </td>
         <td>
           <input
             type="text"
@@ -19,13 +16,11 @@
             required
             aria-describedby="basic-addon3"
             placeholder="Nom de Formation"
+            title="Saisir le nom de formation"
           />
         </td>
       </tr>
       <tr>
-        <td>
-          <span class=" text-warning ">Nombre de places :</span>
-        </td>
         <td>
           <input
             type="number"
@@ -39,14 +34,11 @@
             name="nombrePlace"
             placeholder="en nombre de place"
             aria-describedby="basic-addon3"
+            title="Nombre des places"
           />
         </td>
-
       </tr>
       <tr>
-        <td>
-          <span class=" text-warning ">Durée :</span>
-        </td>
         <td>
           <input
             type="number"
@@ -60,13 +52,11 @@
             aria-describedby="basic-addon3"
             #duree="ngModel"
             placeholder="en jours"
+            title="Durée en jours"
           />
         </td>
       </tr>
       <tr>
-        <td>
-          <span class=" text-warning ">Date de début :</span>
-        </td>
         <td>
           <input
             type="date"
@@ -79,13 +69,11 @@
             [ngClass]="{'is-invalid': dateDebut.invalid || dateDebut.touched,'is-valid': dateDebut.valid }"
             min="{{ today | date: 'yyyy-MM-dd' }}"
             aria-describedby="basic-addon3"
+            title="Date de début"
           />
         </td>
       </tr>
       <tr>
-        <td>
-          <span class=" text-warning ">Heure de début :</span>
-        </td>
         <td>
           <input
             type="time"
@@ -99,14 +87,11 @@
             min="07:00"
             max="20:00"
             aria-describedby="basic-addon3"
+            title="Heure de début"
           />
         </td>
       </tr>
-
       <tr>
-        <td>
-          <span class=" text-warning ">Catégorie :</span>
-        </td>
         <td>
           <select
             name="categorie"
@@ -116,6 +101,7 @@
             #categorie="ngModel"
             [ngClass]="{'is-invalid': categorie.invalid || categorie.touched,'is-valid': categorie.valid }"
             class="form-select inputs"
+            title="Type de formation"
           >
             <option value="web">Développement Web</option>
             <option value="mobile">Développement Mobile</option>
@@ -128,97 +114,85 @@
           </select>
         </td>
       </tr>
-    </tbody>
-
-    <tr>
-      <td>
-        <span class=" text-warning ">Entité fomatrice : </span>
-      </td>
-      <td>
-        <select
-          name="entiteFormatrice"
-          ngModel
-          required
-          #entiteFormatrice="ngModel"
-          [(ngModel)]="f.entiteFormatrice"
-          class="form-select inputs"
-          [ngClass]="{'is-invalid': entiteFormatrice.invalid || entiteFormatrice.touched,'is-valid': entiteFormatrice.valid}"
-        >
-          <option
-            *ngFor="let entite of entiteFormatice"
-            [value]="entite.idEntite"
+      <tr>
+        <td>
+          <select
+            name="entiteFormatrice"
+            ngModel
+            required
+            #entiteFormatrice="ngModel"
+            [(ngModel)]="f.entiteFormatrice"
+            class="form-select inputs"
+            [ngClass]="{'is-invalid': entiteFormatrice.invalid || entiteFormatrice.touched,'is-valid': entiteFormatrice.valid}"
+            title="Entité formatrice associée"
           >
-            {{ entite.nomEntite }}
-          </option>
-        </select>
-      </td>
-    </tr>
-    <tr>
-      <td class="text-warning ">Photo :</td>
-      <td class="mb-3 ">
-        <input 
-        class="form-control" type="file"
-        name="photo"
-        ngModel
-        [ngClass]="{'is-invalid': photo==null,'is-valid': photo!=null}"
-        accept="image/*"
-        (change)="onFileSelected($event)"
-        id="formFile"
-        required />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <span for="textarea" class=" text-warning ">Description</span>
-      </td>
-      <td>
-        <textarea
-          class="form-control inputs textarea"
-          required
-          maxlength="1000"
-          #description="ngModel"
-          [ngClass]="{'is-invalid': description.invalid || description.touched,'is-valid': description.valid}"
-          [(ngModel)]="f.description"
-          name="description"
-          ngModel
-          id="textarea"
-        ></textarea>
-        <label
-          [ngClass]="{
-            green: size.length <= 300,
-            yellow: size.length > 300 && size.length < 600,
-            orange: size.length > 600
-          }"
-          *ngIf="formation.value.description as size"
-          style="width: 100%; display: flex; justify-content: end"
-        >
-          {{ size.length }}/999
-        </label>
-      </td>
-    </tr>
+            <option *ngFor="let entite of entiteFormatice" [value]="entite.idEntite">
+              {{ entite.nomEntite }}
+            </option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td class="mb-3">
+          <input
+            class="form-control add-img"
+            type="file"
+            name="photo"
+            ngModel
+            [ngClass]="{'is-invalid': photo==null,'is-valid': photo!=null}"
+            accept="image/*"
+            (change)="onFileSelected($event)"
+            id="formFile"
+            required
+            title="Télécharger l'image"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <textarea
+            class="form-control inputs textarea"
+            required
+            maxlength="1000"
+            #description="ngModel"
+            [ngClass]="{'is-invalid': description.invalid || description.touched,'is-valid': description.valid}"
+            [(ngModel)]="f.description"
+            name="description"
+            ngModel
+            id="textarea"
+            placeholder="Languages, outils, fondateurs.."
+            title="Ajouter une description"
+          ></textarea>
+          <label
+            [ngClass]="{
+              green: size.length <= 300,
+              yellow: size.length > 300 && size.length < 600,
+              orange: size.length > 600
+            }"
+            *ngIf="formation.value.description as size"
+            style="width: 100%; display: flex; justify-content: end"
+          >
+            {{ size.length }}/999
+          </label>
+        </td>
+      </tr>
+    </tbody>
   </table>
   <button
     [disabled]="formation.invalid"
-    mat-flat-button
     *ngIf="!stateBtnConfirme"
-    class="add-btn bg-warning text-white"
-    style="border-radius: 5px ; border-color: #cd3c14;"
+    class="add-btn "
     (click)="addFormation(formation)"
-    color="primary"
   >
-    Ajouter
+    Confirmer
   </button>
-
   <button
     *ngIf="stateBtnConfirme"
     [disabled]="formation.invalid"
-    mat-flat-button
     class="add-btn"
-    style="border-radius: 0"
     (click)="confirmFormation(formation)"
-    color="primary"
   >
-    Confirmer la formation
+    Confirmer
   </button>
 </form>
 
